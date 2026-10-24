@@ -1,0 +1,11 @@
+# Node / Vite
+frontend/node_modules/
+frontend/dist/
+frontend/*.tsbuildinfo
+
+# Java / Maven
+backend/**/target/
+
+# Local environment configuration
+frontend/.env
+frontend/.env.*.local
