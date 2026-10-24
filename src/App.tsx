@@ -11,7 +11,7 @@ type Answer = { answer: string; sources: SourceRef[] }
 type Turn = { id: number; question: string; answer: Answer; time: string }
 type Page = 'Overview' | 'Documents' | 'Ask'
 
-const API_BASE = (import.meta.env.VITE_API_BASE_URL ?? 'http://localhost:8080').replace(/\/$/, '')
+const API_BASE = (import.meta.env.VITE_API_BASE_URL ?? 'https://pdf-aq-backend.onrender.com').replace(/\/$/, '')
 const initials = (name: string) => name.replace(/\.pdf$/i, '').split(/[\s_-]+/).filter(Boolean).slice(0, 2).map(x => x[0]).join('').toUpperCase() || 'PDF'
 const palette = ['#e9e5ff', '#e1f1e9', '#fce9da', '#e4efff', '#fae3ed']
 
